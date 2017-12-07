@@ -1,0 +1,39 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui"
+    xmlns:m="urn:import:gwt.material.design.client.ui" >
+    <ui:style>
+
+    .label{
+        margin-left: 5%;
+        margin-top: 5%
+    }
+    .pad300 {
+        padding-left: 300px;
+    }
+    header, footer {
+        padding-left: 300px;
+    }
+    </ui:style>
+    <g:HTMLPanel>
+        <m:MaterialNavBar ui:field="UI_navBar" wave="light" align="right" color="teal" text="Hungry" sideBar="fixed" sideBarWidth="300">
+            <m:sidebaritem>
+                <m:MaterialTopNav ui:field="UI_topNav" textColor="white" type="sidebar"
+                                  profileName="user name" profileImageUrl="http://orig08.deviantart.net/efb9/f/2012/015/0/4/south_park_kenny_mccormick_by_dimabig-d4mf8hl.gif" url="https://themerkle.com/wp-content/uploads/2017/02/rare-cryptocurrency.jpg">
+                    <!--  -->
+                    <m:child>
+                        <m:MaterialLink ui:field="UI_lblEmail" text="user@email.com" textColor="white" fontSize="0.8"/>
+                    </m:child>
+                </m:MaterialTopNav>
+            </m:sidebaritem>
+            <m:sidebaritem><m:MaterialLink ui:field="lnkOrder" icon="mdi-action-subject" iconPosition="left" text="Portfolio" textColor="teal"  /></m:sidebaritem>
+            <m:sidebaritem><m:MaterialLink ui:field="lnkPast" icon="mdi-maps-local-grocery-store" iconPosition="left" text="Market Watch" textColor="teal"/></m:sidebaritem>
+            <m:sidebaritem><m:MaterialLink ui:field="lnkAccount" icon="mdi-action-account-circle" iconPosition="left" text="Account" textColor="teal"  /></m:sidebaritem>
+            <m:sidebaritem><m:MaterialLink ui:field="lnkLogout" icon="mdi-action-exit-to-app" iconPosition="left" text="Log Out" textColor="teal"  /></m:sidebaritem>
+        </m:MaterialNavBar>
+
+        <m:MaterialContainer ui:field="UI_canvas" styleName="{style.pad300}">
+        </m:MaterialContainer>
+
+    </g:HTMLPanel>
+</ui:UiBinder> 

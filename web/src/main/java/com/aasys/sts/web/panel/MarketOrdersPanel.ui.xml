@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui" >
+    <ui:style>
+
+        .pad {
+            margin-left: 5%;
+            margin-top: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+        }
+    </ui:style>
+
+
+    <g:HTMLPanel styleName="{style.pad}">
+        <m:MaterialTextBox ui:field="txtSearch" icon="mdi-action-search" placeholder="Search..." visible = "false"></m:MaterialTextBox>
+        <m:MaterialColumn ui:field="mCol"></m:MaterialColumn>
+        <m:MaterialTitle ui:field="txtOrderTotal"></m:MaterialTitle>
+
+    </g:HTMLPanel>
+</ui:UiBinder>
