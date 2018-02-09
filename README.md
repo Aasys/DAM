@@ -1,6 +1,4 @@
 Ashish Shreshta
-Assignment 3: Implementing a System Highlighting a Non-Trivial Modern Architecture
-12/06/2017
 -----------------------------------------
 
 Project Topic: 
